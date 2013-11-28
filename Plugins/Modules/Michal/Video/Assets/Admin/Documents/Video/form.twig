@@ -1,0 +1,15 @@
+<div class="document-form">
+	<page-header document="document" sub-title="{{ i18nAttr(modelKey('Michal_Video_Video'), ['ucf']) }}"></page-header>
+
+	<rbs-workspace-config>
+		<rbs-breadcrumb-config>
+			<location href="(= 'Michal_Video'|rbsURL:'home' =)">{{ i18n('m.michal.video.admin.module_name', ['ucf']) }}</location>
+			<location href="(= 'Michal_Video_Video'|rbsURL:'list' =)">{{ i18n('m.michal.video.admin.video_list', ['ucf']) }}</location>
+		</rbs-breadcrumb-config>
+	</rbs-workspace-config>
+
+	<div ng-switch="editMode">
+		<div ng-switch-when="translate" class="rbs-document-editor rbs-document-editor-translate rbs-document-editor-michal-video-video-translate"></div>
+		<div ng-switch-default="" class="rbs-document-editor rbs-document-editor-michal-video-video"></div>
+	</div>
+</div>

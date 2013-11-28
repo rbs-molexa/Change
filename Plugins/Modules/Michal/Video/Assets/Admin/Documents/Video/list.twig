@@ -1,0 +1,22 @@
+<div>
+	<rbs-workspace-config menu="Michal_Video">
+		<rbs-breadcrumb-config>
+			<location href="(= 'Michal_Video'|rbsURL:'home' =)">{{ i18n('m.michal.video.admin.module_name', ['ucf']) }}</location>
+			<location href="(= 'Michal_Video_Video'|rbsURL:'list' =)">{{ i18nAttr('m.michal.video.admin.video_list', ['ucf']) }}</location>
+		</rbs-breadcrumb-config>
+	</rbs-workspace-config>
+
+	<page-header title="{{ i18nAttr('m.michal.video.admin.video_list', ['ucf']) }}"></page-header>
+	<search-filters model="Michal_Video_Video" filter-query="query" text-search="textSearch"></search-filters>
+	<div class="add-elements-bar">
+		<a href ng-href="(= 'Michal_Video_Video' | documentURL:'new' =)">
+			{{ i18n('m.michal.video.admin.video_create', ['ucf']) }}
+		</a>
+	</div>
+
+	<rbs-document-list data-dlid="DLCollection1" model="Michal_Video_Video" filter-query="query" publishable="true">
+		<column name="label" primary="true"></column>
+		<column name="date">(= doc.date|rbsDateTime =)</column>
+		<column name="endDate">(= doc.endDate|rbsDateTime =)</column>
+	</rbs-document-list>
+</div>

@@ -1,0 +1,18 @@
+{
+	"video_description":{
+		"message":"description"
+	},
+	"video_file":{
+		"message":"file"
+	},
+	"video_mimetype":{
+		"message":"MIME type"
+	},
+	"video_file_informations":{
+		"message":"file informations"
+	},
+	"video":{
+		"message":"video"
+	}
+}
+

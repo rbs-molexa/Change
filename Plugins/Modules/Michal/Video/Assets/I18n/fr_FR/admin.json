@@ -1,0 +1,17 @@
+{
+	"module_name":{
+		"message":"vidéos"
+	},
+	"module_keywords":{
+		"message":"vidéos"
+	},
+	"video_list":{
+		"message":"vidéos"
+	},
+	"video_create":{
+		"message":"ajouter une vidéo"
+	},
+	"find_videos":{
+		"message":"trouver des vidéos"
+	}
+}
